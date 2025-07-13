@@ -1,0 +1,41 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.App {
+    text-align: center;
+}
+
+.App-header {
+    padding: 20px;
+}
+
+nav button {
+    background: #333;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.view {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #333;
+}
+
+textarea {
+    width: 80%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.response {
+    margin-top: 20px;
+    padding: 15px;
+    background: #222;
+    text-align: left;
+}
