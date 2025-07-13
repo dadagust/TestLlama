@@ -1,0 +1,13 @@
+Flask
+flask-cors
+
+llama-cpp-python
+
+openai-whisper
+
+TTS==0.22.0
+
+torch==2.1.2
+torchaudio==2.1.2
+
+numpy==1.26.4
