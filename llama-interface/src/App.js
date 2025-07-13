@@ -8,19 +8,16 @@ function App() {
     const [conversation, setConversation] = useState([]);
     const chatEndRef = useRef(null);
 
-    // Функция для прокрутки чата вниз
     const scrollToBottom = () => {
         chatEndRef.current?.scrollIntoView({behavior: "smooth"});
     };
 
-    // Загрузка истории при переключении на чат
     useEffect(() => {
         if (activeView === 'chat') {
             fetchHistory();
         }
     }, [activeView]);
 
-    // Прокрутка при обновлении диалога
     useEffect(() => {
         scrollToBottom();
     }, [conversation]);
@@ -52,7 +49,6 @@ function App() {
         if (!userInput.trim()) return;
 
         const newUserMessage = {sender: 'user', message: userInput};
-        // Оптимистичное обновление: сразу показываем сообщение пользователя
         setConversation(prev => [...prev, newUserMessage]);
         setUserInput('');
 
